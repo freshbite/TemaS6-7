@@ -9,7 +9,7 @@ body {
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: 0fr 2.8fr 0fr; 
-    gap: 30px 33px; 
+    gap: 33px 33px; 
     grid-template-areas: 
     "header"
     "cursuri"
