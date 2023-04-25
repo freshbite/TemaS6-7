@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+.container {  
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0fr 2.8fr 0fr; 
+    gap: 30px 33px; 
+    grid-template-areas: 
+    "header"
+    "cursuri"
+    "contact";  
+}
+    
+header{ 
+    background-color: rgb(24, 31, 76);
+    color: white; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(24, 31, 76);
+}
+  
+li{
+    float: left;
+}
+  
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color:chocolate;
+}
+
+.active{
+    background-color: #04AA6D;
+}
+
+.cursuri { 
+    grid-area: cursuri; 
+    padding-left: 235px;
+    font-size: 20px;
+}
+
+table.cursuridispo{
+    margin: auto 0;
+    margin-top: 20px;
+    width: 80%;
+}
+
+table.cursuridispo td{
+    height: 50px;
+    border-bottom: solid 3px chocolate ;
+    width: 50px;
+}
+
+table.cursuridispo td a{
+    margin-left: 0px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(24, 31, 76);
+    color: white;
+  }
+
+
+  
+.footer__list{
+    display: grid;
+    list-style: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__list li{
+    display: block;
+}
+
+
+.footer__list li a{
+    display: contents;
+}
+
